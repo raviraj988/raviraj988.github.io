@@ -19,13 +19,10 @@ main:
     
 # - title: "Portfolio"
 #    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
   - title: "CV"
     url: /cv/
-    
+           
+
   # - title: "CV"
   #   url: /cv-json/
   - title: "AI/Machine Learning"
@@ -34,5 +31,9 @@ main:
   - title: "Robotics"
     url: /Robotics/
     
+  - title: "Blog Posts"
+    url: /year-archive/
+    
+   
  # - title: "Guide"
  #   url: /markdown/
