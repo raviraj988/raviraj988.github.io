@@ -13,7 +13,7 @@ I have taken graduate-level courses in **Machine Learning**, **Natural Language 
 
 I have four years of professional experience from **Tata Consultancy Services**, where I worked on designing and deployment of end-to-end machine learning systems in the banking and finance sector.
 
-My work included building and fine-tuning scalable varous NLP pipelines using transformer-based models such as BERT, RoBERTa  as well as implementing production-grade MLOps workflows using MLflow, Docker, Kubernetes, and Jenkins. I’ve handled massive, high-velocity data from sources like Hadoop, Snowflake, and MongoDB, integrating continuous model validation, drift detection, and real-time monitoring with Prometheus and Grafana.
+My work included building and fine-tuning scalable varous NLP pipelines using transformer-based models such as BERT, RoBERTa  as well as implementing production-grade** MLOps workflows** using MLflow, Docker, Kubernetes, and Jenkins. I’ve handled massive, high-velocity data from sources like Hadoop, Snowflake, and MongoDB, integrating continuous model validation, drift detection, and real-time monitoring with Prometheus and Grafana.
 
 
 ---
