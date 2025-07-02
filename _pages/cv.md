@@ -7,10 +7,12 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+## 📄 Embedded Resume
 
-📄 **Download My Full Resume (PDF)**  
-👉 [Click here to view/download](../files/Resume_Gen_AI_Research.pdf)
+<iframe src="/files/Resume_Gen_AI_Research.pdf" width="100%" height="1000px" style="border: none;">
+  Your browser does not support PDFs. 
+  <a href="/files/Resume_Gen_AI_Research.pdf">Download the resume instead.</a>
+</iframe>
 
 ---
 
