@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Ravi Raj Kumar – AI Researcher & ML Engineer"
+title: "Ravi Raj Kumar – AI/ML Engineer"
 author_profile: true
 redirect_from:
   - /about/
@@ -9,7 +9,7 @@ redirect_from:
 
 Hello! I’m **Ravi Raj Kumar**, a graduate student pursuing an M.S. in Computer Science at **Case Western Reserve University**, with a strong focus on **Machine Learning**, **Generative AI**, and **AI Infrastructure**. With over 4 years of professional experience at **Tata Consultancy Services**, I’ve led end-to-end deployment of production-grade AI systems, including scalable ML pipelines, NLP model development, and MLOps integration.
 
-My academic and research interests center around **multimodal learning**, **retrieval-augmented generation (RAG)**, **diffusion models**, and **fine-tuning large language models (LLMs)**. I also explore real-time AI applications in robotics and embedded systems.
+My academic and research interests center around **vision and Language multimodal systems**, **diffusion models**,**Reinforcement Learning**. I also explore real-time AI applications in robotics and embedded systems.
 
 ---
 
@@ -27,7 +27,7 @@ My academic and research interests center around **multimodal learning**, **retr
 
 **Machine Learning Engineer**  
 *Tata Consultancy Services* (2019–2023)  
-- Led the development of robust NLP pipelines using BERT, RoBERTa, and Longformer for complaint categorization and severity prediction in banking systems.  
+- Led the development of robust NLP pipelines using BERT, RoBERTa, and Longformer for complaint categorization and severity prediction in banking/ finance domain.  
 - Built CI/CD workflows with Jenkins, MLflow, Docker, and Kubernetes to support reproducible ML lifecycle and scalable model deployment across hybrid environments.  
 - Designed real-time monitoring and drift detection dashboards using Prometheus and Grafana.  
 
@@ -53,7 +53,7 @@ My academic and research interests center around **multimodal learning**, **retr
 
 ---
 
-### 🚀 Selected Projects
+### 🚀Projects
 
 - **🩺 Multi-Agent Medical Appointment System**  
   Designed a LangGraph-based supervisor-agent system with FastAPI backend and Streamlit UI. Achieved ~60% latency reduction in appointment processing.
