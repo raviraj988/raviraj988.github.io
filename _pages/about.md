@@ -7,9 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-I’m Ravi Raj Kumar, a graduate student in Computer Science at **Case Western Reserve University**, specializing in AI and Machine Learning. My academic background includes coursework and research in Machine Learning, Natural Language Processing, probabilistic Graphical models, computer vision,  High Performant Systems for AI and reinforcement learning.
+I’m Ravi Raj Kumar, a graduate student in Computer Science at **Case Western Reserve University**, specializing in AI and Machine Learning. 
 
-I have four years of professional experience from **Tata Consultancy Services**, where I worked on designing and deployment of end-to-end machine learning systems in the banking and finance sector. My work included building and fine-tuning scalable varous NLP pipelines using transformer-based models such as BERT, RoBERTa  as well as implementing production-grade MLOps workflows using MLflow, Docker, Kubernetes, and Jenkins. I’ve handled massive, high-velocity data from sources like Hadoop, Snowflake, and MongoDB, integrating continuous model validation, drift detection, and real-time monitoring with Prometheus and Grafana.
+I have taken graduate-level courses in **Machine Learning**, **Natural Language Processing**, **Probabilistic Graphical Models**, **Computer Vision**, **High-Performance Systems for AI**, and **Reinforcement Learning**, which have built a strong foundation for both my academic research and applied AI work.
+
+I have four years of professional experience from **Tata Consultancy Services**, where I worked on designing and deployment of end-to-end machine learning systems in the banking and finance sector.
+
+My work included building and fine-tuning scalable varous NLP pipelines using transformer-based models such as BERT, RoBERTa  as well as implementing production-grade MLOps workflows using MLflow, Docker, Kubernetes, and Jenkins. I’ve handled massive, high-velocity data from sources like Hadoop, Snowflake, and MongoDB, integrating continuous model validation, drift detection, and real-time monitoring with Prometheus and Grafana.
 
 
 ---
