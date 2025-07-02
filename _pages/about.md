@@ -17,7 +17,7 @@ I have four years of professional experience from **Tata Consultancy Services**,
 ### 🧪 Research Interests  
 My research lies at the intersection of **generative modeling**, **multimodal vision-language learning**, and **reinforcement learning for structured reasoning**. I have explored methods to improve sample-efficient PPO-based optimization for multi-agent setups, and designing modular generative pipelines that operate across modalities. My work also extends to semi-supervised learning with deep generative models and efficient 3D perception using 2D vision cues—bridging foundational AI research with practical deployment challenges.
 
-####📚 Research Highlights
+#### 📚 Research Highlights
 
 - **Optimizing RAG with Multi-Agent Reinforcement Learning**  
   Designed a Multi-Agent Reinforcement Learning framework for RAG, modeling query design, document retrieval, and answer generation as cooperative agents jointly optimized via PPO under a unified F1-based reward signal.
