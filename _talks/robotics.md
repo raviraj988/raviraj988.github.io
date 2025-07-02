@@ -1,5 +1,5 @@
 ---
-title: "🤖 Robotics Projects"
+title: "🤖 Robotics"
 layout: page
 permalink: /robotics/
 ---
