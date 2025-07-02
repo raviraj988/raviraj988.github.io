@@ -1,34 +1,38 @@
 ---
 permalink: /
-title: "Ravi Raj Kumar – AI/ML Engineer & Researcher"
+title: " 👋 About Me"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-Hello! I’m **Ravi Raj Kumar**, a graduate student pursuing an M.S. in Computer Science at **Case Western Reserve University**, where I specialize in **Machine Learning**, **Generative AI**, and **AI Infrastructure**. I have four years of professional experience from **Tata Consultancy Services**, where I worked on  designing and deployment of end-to-end machine learning systems in the banking and finance sector. My work included building and fine-tuning scalable NLP pipelines using transformer-based models such as BERT, RoBERTa, and Longformer, as well as implementing production-grade MLOps workflows using MLflow, Docker, Kubernetes, and Jenkins. I’ve handled massive, high-velocity data from sources like Hadoop, Snowflake, and MongoDB, integrating continuous model validation, drift detection, and real-time monitoring with Prometheus and Grafana.
+I’m Ravi Raj Kumar, a graduate student in Computer Science at Case Western Reserve University, specializing in Machine Learning, Generative AI, and AI Infrastructure. My academic background includes advanced coursework and reserch in Machine Learning, Natural Language Processing, probabilistic Graphical models, computer vision,  High Performant Systems for AI and reinforcement learning.
 
+I have four years of professional experience from **Tata Consultancy Services**, where I worked on  designing and deployment of end-to-end machine learning systems in the banking and finance sector. My work included building and fine-tuning scalable NLP pipelines using transformer-based models such as BERT, RoBERTa, and Longformer, as well as implementing production-grade MLOps workflows using MLflow, Docker, Kubernetes, and Jenkins. I’ve handled massive, high-velocity data from sources like Hadoop, Snowflake, and MongoDB, integrating continuous model validation, drift detection, and real-time monitoring with Prometheus and Grafana.
+
+
+---
 
 ### 🧪 Research Interests  
 My research lies at the intersection of **generative modeling**, **multimodal vision-language learning**, and **reinforcement learning for structured reasoning**. I have explored methods to improve the efficiency, adaptability, and semantic grounding of large models, especially in contexts like RAG, image-conditioned text generation, and text-to-image synthesis. Developed sample-efficient PPO-based optimization for multi-agent setups, and designing modular generative pipelines that operate across modalities. My work also extends to semi-supervised learning with deep generative models and efficient 3D perception using 2D vision cues—bridging foundational AI research with practical deployment challenges.
 
+### 📚 Research Highlights
 
-### 🤖 Robotics  
-In robotics, I work on **real-time autonomous systems** integrating perception, planning, and control using **ROS2**, **SLAM**, and behavior trees. I’ve developed multi-robot exploration systems, real-time 3D segmentation pipelines, and motion planning algorithms for quadruped and manipulator platforms. My focus is on combining classical robotics with modern AI techniques to create robust, adaptable, and resource-efficient autonomous systems suitable for deployment in dynamic, unstructured environments.
+- **Optimizing RAG with Multi-Agent Reinforcement Learning**  
+  Designed a Multi-Agent Reinforcement Learning framework for RAG, modeling query design, document retrieval, and answer generation as cooperative agents jointly optimized via PPO under a unified F1-based reward signal.
+  
+- **Multimodal Transformer for Image-Conditioned Generation**  
+  Designed and implemented a multimodal transformer integrating a SigLIP-style Vision Transformer with a Gemma-based causal decoder for image-grounded generation tasks such as captioning and visual question answering.
 
-### 🔧 Backend & API Development  
-I design production-ready backend systems and RESTful APIs using **FastAPI**, **Python**, and containerized microservices. My work follows modern industry practices, including **asynchronous I/O**, **secure secret management**, **CI/CD pipelines**, and **infrastructure-as-code**. I specialize in integrating ML models into scalable APIs, building modular, testable services with versioned deployments, and delivering interactive web interfaces using **Streamlit**, **Gradio**, or **AJAX-based frontends**.
+- **Latent Diffusion for Text-to-Image Synthesis**  
+  Reproduced Stable Diffusion v1.5 with classifier-free guidance, achieving FID: 12.4 and CLIPScore: 0.32; enabled inpainting, image-to-image, and captioning tasks.
 
----
-
-### 🔍 Areas of Focus
-
-- **Multimodal AI** – Vision-language transformers, captioning, image-conditioned generation  
-- **Generative Modeling** – Diffusion models (DDPM, VDM), VAEs, GANs, Stable Diffusion  
-- **LLMs & RAG Systems** – LangChain agents, query rewriting, semantic search, LoRA/QLoRA  
-- **MLOps & Deployment** – MLflow, Docker, Kubernetes, CI/CD, Prometheus, scalable inference  
-- **Reinforcement Learning** – PPO, REINFORCE, DDPG, SAC, Multi-Agent Coordination  
+- **Semi-Supervised Learning with Deep Generative Models**  
+  Extended the M2 architecture with entropy regularization and mutual information maximization, yielding a +4% accuracy gain on CIFAR-10 benchmarks.
+  
+- **🛰️ 3D Point Cloud Segmentation via 2D Voting**  
+  Developed a novel 3D point cloud segmentation framework leveraging state-of-the-art 2D image segmentation models (OneFormer) and a voting-based approach to project 2D semantic and panoptic labels onto 3D point clouds, achieving real-time segmentation with reduced computational overhead.
 
 ---
 
@@ -48,40 +52,35 @@ and Prioritization, Named Entity Recognition (NER) for automated information ext
 - Architected ingestion and transformation pipelines for Hadoop, Snowflake, and MongoDB sources.  
 - Delivered production-grade data pipelines using DBT, Hive, and shell scripting with automated validation and security controls.
 
----
+ --- 
+### 🤖 Robotics  
+I work on **real-time autonomous systems** that integrate perception, planning, and control using **ROS2**, **SLAM**, and visual-inertial pipelines. My robotics projects span multi-agent navigation, racing systems, and robotic arms—blending classical robotics with modern deep learning for robust, adaptive, and deployable solutions.
 
-### 📚 Research Highlights
+- **🤖 Multi-Agent SLAM for Quadruped Robots**  
+  Built distributed SLAM pipelines for Unitree GO1/GO2 using ZED SDK and RTABMap with LiDAR, improving mapping via voxel filtering and cloud clustering.
 
-- **Optimizing RAG with Multi-Agent Reinforcement Learning**  
-  Developed PPO-optimized agents for query rewrite, passage retrieval, and answer generation, using warm-started LoRA adapters and unified F1 reward shaping.
-
-- **Multimodal Transformer for Image-Conditioned Generation**  
-  Engineered a SigLIP-Gemma transformer with autoregressive decoding and KV caching, improving BLEU-4 by +3.7 over greedy decoding.
-
-- **Latent Diffusion for Text-to-Image Synthesis**  
-  Reproduced Stable Diffusion v1.5 with classifier-free guidance, achieving FID: 12.4 and CLIPScore: 0.32; enabled inpainting, image-to-image, and captioning tasks.
-
-- **Semi-Supervised Learning with Deep Generative Models**  
-  Extended the M2 architecture with entropy regularization and mutual information maximization, yielding a +4% accuracy gain on MNIST.
-
----
-
-### 🚀 Notable Projects
-
-- **🩺 Multi-Agent Medical Appointment System**  
-  LangGraph-based supervisor-agent routing system with FastAPI + Streamlit UI; reduced latency by ~60%.
-
-- **💬 RAG-Powered Customer Support Chatbot**  
-  End-to-end QA pipeline using AstraDB, LangChain, Gemini Pro embeddings, and a FastAPI + AJAX frontend.
+- **🧠 Swarm-Based Exploration and Semantic Mapping**  
+  Developed scalable ROS2-based swarm navigation using stereo vision and instance segmentation with a custom semantic task allocator and chatbot interface.
 
 - **🛰️ 3D Point Cloud Segmentation via 2D Voting**  
-  Achieved 96.5% accuracy by projecting OneFormer 2D masks onto 3D LiDAR scans using depth fusion.
-  
-- **🏁 Autonomous Racing Buggy (ROS2 + YOLO)**  
-  Deployed LIDAR and camera fusion with INT8-quantized YOLOv5 for real-time track navigation and object avoidance.
+  Achieved 96.5% segmentation accuracy by projecting OneFormer 2D masks onto 3D LiDAR scans, enabling real-time, resource-efficient 3D understanding.
 
-- **🤖 Multi-Agent SLAM with Quadruped Robots**  
-  Developed SLAM and exploration pipelines for Unitree GO robots using RTABMap and ZED-based visual-inertial fusion.
+- **🏁 Autonomous Racing Buggy (ROS2 + YOLO)**  
+  Integrated LIDAR and camera with INT8-quantized YOLOv5s for real-time object detection; achieved 1:42 track time with Ackermann-steering controller.
+
 
 ---
+
+### 🔧 Backend & API Development
+- Designed and deployed RESTful APIs using **FastAPI** and Python for modular AI services
+- Built microservice architectures leveraging **Docker**, **Kubernetes**, and **NGINX** for scalable deployments
+- Implemented **asynchronous processing** and **background task queues** using `asyncio` and `Celery` for real-time API responsiveness
+- Used **CI/CD pipelines** with Jenkins and GitHub Actions to automate testing, linting, and container deployments
+- Ensured **secure secret management** and environment isolation via Docker secrets, `.env` configs, and role-based access
+- Delivered interactive model interfaces using **Streamlit**, **Gradio**, and **AJAX/REST** frontends for live ML demos
+- Followed infrastructure-as-code principles using **Terraform** and **Docker Compose** for reproducible environments
+
+
+---
+
 
