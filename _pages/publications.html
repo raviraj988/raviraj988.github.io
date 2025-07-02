@@ -1,90 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🧠 AI & Machine Learning Projects</title>
-  <link rel="stylesheet" href="/assets/css/main.css">
-</head>
-<body>
-  <main class="container">
-    <h1>🚀 AI & Machine Learning Projects</h1>
-    <p>
-      Welcome to my AI/ML portfolio. This section showcases my work in machine learning, generative AI, large language models,
-      and MLOps. My focus lies in building scalable systems that combine state-of-the-art modeling with production-grade deployment.
-      Projects here span across <strong>Reinforcement Learning</strong>, <strong>Diffusion-based Generation</strong>,
-      <strong>Multimodal Transformers</strong>, and <strong>LLM Tooling</strong>, developed through both research and industry settings.
-    </p>
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: false
+---
 
-    <section>
-      <h2>🔀 Optimizing RAG with Multi-Agent Reinforcement Learning</h2>
-      <a href="https://github.com/raviraj988" target="_blank">🔗 GitHub Repo</a>
-      <img src="/images/projects/rag-ppo.png" alt="RAG PPO Project" style="width:100%; max-width:800px;">
-      <ul>
-        <li>Designed a multi-agent PPO-based framework where query rewriting, document retrieval, and generation are jointly optimized.</li>
-        <li>Used LoRA adapters for warm-start fine-tuning and built a reproducible pipeline with TRL’s PPOTrainer.</li>
-      </ul>
-    </section>
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% endif %}
 
-    <section>
-      <h2>🖼️ Multimodal Transformer for Image-Conditioned Generation</h2>
-      <a href="https://github.com/yourusername/siglip-gemma" target="_blank">🔗 GitHub Repo</a>
-      <img src="/images/projects/siglip-gemma.png" alt="Multimodal Transformer" style="width:100%; max-width:800px;">
-      <ul>
-        <li>Built a transformer combining SigLIP ViT encoder with a Gemma-style decoder for captioning and VQA.</li>
-        <li>Engineered KV caching and decoding for performance and BLEU-4 improvement.</li>
-      </ul>
-    </section>
+{% include base_path %}
 
-    <section>
-      <h2>🎨 Latent Diffusion Model for Text-to-Image Synthesis</h2>
-      <a href="https://github.com/hkproj/pytorch-stable-diffusion" target="_blank">🔗 GitHub Repo</a>
-      <img src="/images/projects/latent-diffusion.png" alt="Stable Diffusion" style="width:100%; max-width:800px;">
-      <ul>
-        <li>Reproduced Stable Diffusion using CLIP, VAE, and U-Net; achieved FID: 12.4 and CLIPScore: 0.32 on COCO.</li>
-        <li>Optimized decoding throughput with custom scheduler and Transformer-based tokenizer.</li>
-      </ul>
-    </section>
+<!-- New style rendering if publication categories are defined -->
+{% if site.publication_category %}
+  {% for category in site.publication_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
 
-    <section>
-      <h2>📊 Semi-Supervised Learning with Deep Generative Models</h2>
-      <a href="https://github.com/raviraj988/Enhancing_SSL_Using_Deep_Gen_Models" target="_blank">🔗 GitHub Repo</a>
-      <img src="/images/projects/ssl-dgm.png" alt="Semi-supervised Learning" style="width:100%; max-width:800px;">
-      <ul>
-        <li>Extended the M2 architecture with ELBO regularization and mutual information-based loss.</li>
-        <li>Achieved +4% accuracy on CIFAR-10 and 15% entropy reduction under low-label constraints.</li>
-      </ul>
-    </section>
 
-    <section>
-      <h2>🚁 3D Point Cloud Segmentation via 2D Voting</h2>
-      <a href="https://github.com/raviraj988/3D-POINT-CLOUD-SEGMENTATION-USING-2D-IMAGE-SEGMENTATION" target="_blank">🔗 GitHub Repo</a>
-      <img src="/images/projects/pointcloud.png" alt="3D Point Cloud" style="width:100%; max-width:800px;">
-      <ul>
-        <li>Used OneFormer for 2D segmentation and projected masks onto 3D point clouds using RGB + LiDAR.</li>
-        <li>Achieved 96.5% accuracy with lightweight inference and memory footprint.</li>
-      </ul>
-    </section>
 
-    <section>
-      <h2>🩺 Multi-Agent Medical Appointment System</h2>
-      <a href="https://github.com/raviraj988/Multi_Agent_System_For_Doctor-s_Appointment" target="_blank">🔗 GitHub Repo</a>
-      <img src="/images/projects/doctor-agent.png" alt="Medical System" style="width:100%; max-width:800px;">
-      <ul>
-        <li>LangGraph + LangChain powered supervisor-agent system for managing appointments with FastAPI backend.</li>
-        <li>Reduced average booking latency by ~60% via optimized slot filtering and routing.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>💬 RAG-Powered Customer Support Agent</h2>
-      <a href="https://github.com/raviraj988/RAG_Customer_support_System" target="_blank">🔗 GitHub Repo</a>
-      <img src="/images/projects/rag-chatbot.png" alt="RAG Chatbot" style="width:100%; max-width:800px;">
-      <ul>
-        <li>LangChain-based chatbot with AstraDB vector search and Gemini embeddings for contextual recommendations.</li>
-        <li>FastAPI backend with AJAX frontend for real-time responses to Flipkart review-based queries.</li>
-      </ul>
-    </section>
-  </main>
-</body>
-</html>
