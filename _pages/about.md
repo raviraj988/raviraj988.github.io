@@ -13,11 +13,11 @@ I have four years of professional experience from **Tata Consultancy Services**,
 
 
 ---
-### AI & Machine Learning
-#### 🧪 Research Interests  
+## AI & Machine Learning
+### 🧪 Research Interests  
 My research lies at the intersection of **generative modeling**, **multimodal vision-language learning**, and **reinforcement learning for structured reasoning**. I have explored methods to improve sample-efficient PPO-based optimization for multi-agent setups, and designing modular generative pipelines that operate across modalities. My work also extends to semi-supervised learning with deep generative models and efficient 3D perception using 2D vision cues—bridging foundational AI research with practical deployment challenges.
 
-##### 📚 Research Highlights
+####📚 Research Highlights
 
 - **Optimizing RAG with Multi-Agent Reinforcement Learning**  
   Designed a Multi-Agent Reinforcement Learning framework for RAG, modeling query design, document retrieval, and answer generation as cooperative agents jointly optimized via PPO under a unified F1-based reward signal.
@@ -36,7 +36,7 @@ My research lies at the intersection of **generative modeling**, **multimodal vi
 
 ---
 
-#### 💼 Professional Experience
+### 💼 Professional Experience
 
 **Machine Learning Engineer**  
 *Tata Consultancy Services* (2019–2023)  
@@ -53,7 +53,7 @@ and Prioritization, Named Entity Recognition (NER) for automated information ext
 - Delivered production-grade data pipelines using DBT, Hive, and shell scripting with automated validation and security controls.
 
  --- 
-### 🤖 Robotics  
+## 🤖 Robotics  
 I work on **real-time autonomous systems** that integrate perception, planning, and control using **ROS2**, **SLAM**, and visual-inertial pipelines. My robotics projects span multi-agent navigation, racing systems, and robotic arms—blending classical robotics with modern deep learning for robust, adaptive, and deployable solutions.
 
 - **🤖 Multi-Agent SLAM for Quadruped Robots**  
@@ -71,7 +71,7 @@ I work on **real-time autonomous systems** that integrate perception, planning, 
 
 ---
 
-### 🔧 Backend & API Development
+## 🔧 Backend & API Development
 - Designed and deployed RESTful APIs using **FastAPI** and Python for modular AI services
 - Built microservice architectures leveraging **Docker**, **Kubernetes**, and **NGINX** for scalable deployments
 - Implemented **asynchronous processing** and **background task queues** using `asyncio` and `Celery` for real-time API responsiveness
