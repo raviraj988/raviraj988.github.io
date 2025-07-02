@@ -1,5 +1,5 @@
 ---
-title: "🧠 AI & Machine Learning Projects"
+title: "🧠 AI & Machine Learning"
 layout: page
 permalink: /ai-ml/
 ---
