@@ -7,72 +7,85 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I’m **Ravi Raj Kumar**, a graduate student pursuing an M.S. in Computer Science at **Case Western Reserve University**, with a strong focus on **Machine Learning**, **Generative AI**, and **ML Infrastructure**. I bring 4+ years of professional experience as an ML Engineer and Data Engineer at Tata Consultancy Services, building scalable AI/ML systems for real-world applications.
+Hello! I’m **Ravi Raj Kumar**, a graduate student pursuing an M.S. in Computer Science at **Case Western Reserve University**, with a strong focus on **Machine Learning**, **Generative AI**, and **AI Infrastructure**. With over 4 years of professional experience at **Tata Consultancy Services**, I’ve led end-to-end deployment of production-grade AI systems, including scalable ML pipelines, NLP model development, and MLOps integration.
+
+My academic and research interests center around **multimodal learning**, **retrieval-augmented generation (RAG)**, **diffusion models**, and **fine-tuning large language models (LLMs)**. I also explore real-time AI applications in robotics and embedded systems.
 
 ---
 
-### 🔍 Current Focus
+### 🔍 Areas of Focus
 
-- **Multimodal AI** – Image-grounded generation, captioning, vision-language transformers  
-- **RAG & LLM Systems** – Optimizing retrieval pipelines, multi-agent reinforcement learning  
-- **Generative Modeling** – Latent diffusion models, VAEs, fine-tuning Stable Diffusion  
-- **MLOps** – CI/CD, model serving, monitoring with MLflow, Docker, Kubernetes, Prometheus
+- **Multimodal AI** – Vision-language models, captioning, image-conditioned generation  
+- **Generative Modeling** – Diffusion models (DDPM, VDM), VAEs, GANs, Stable Diffusion  
+- **LLMs & RAG Systems** – LangChain agents, query rewriting, semantic search, LoRA/QLoRA  
+- **MLOps & Deployment** – MLflow, Docker, Kubernetes, CI/CD pipelines, observability  
+- **Reinforcement Learning** – PPO/A2C for coordination in agent-based and retrieval systems
 
 ---
 
 ### 💼 Professional Experience
 
 **Machine Learning Engineer**  
-*Tata Consultancy Services* | Oct 2019 – Nov 2023  
-Led end-to-end ML pipelines and NLP model development for a banking domain complaint resolution system. Integrated MLflow, Docker, and Kubernetes into scalable MLOps workflows, reducing model deployment times and improving production reliability.
+*Tata Consultancy Services* (2019–2023)  
+- Led the development of robust NLP pipelines using BERT, RoBERTa, and Longformer for complaint categorization and severity prediction in banking systems.  
+- Built CI/CD workflows with Jenkins, MLflow, Docker, and Kubernetes to support reproducible ML lifecycle and scalable model deployment across hybrid environments.  
+- Designed real-time monitoring and drift detection dashboards using Prometheus and Grafana.  
 
 **Data Engineer**  
-Designed and maintained secure, high-quality data pipelines using Hive, Snowflake, DBT, and shell scripting.
+- Architected ingestion and transformation pipelines for Hadoop, Snowflake, and MongoDB sources.  
+- Delivered production-grade data pipelines using DBT, Hive, and shell scripting with automated validation and security controls.
 
 ---
 
 ### 📚 Research Highlights
 
 - **Optimizing RAG with Multi-Agent Reinforcement Learning**  
-  Modeled RAG as a cooperative RL setup with PPO-trained query, retrieve, and generate agents. Warm-started LoRA adapters improved PPO stability and F1 scores.
+  Developed PPO-optimized agents for query rewrite, passage retrieval, and answer generation, using warm-started LoRA adapters and unified F1 reward shaping.
 
 - **Multimodal Transformer for Image-Conditioned Generation**  
-  Built a SigLIP-Gemma hybrid model with autoregressive decoding, KV caching, and image token prefixing. Achieved a 3.7 BLEU-4 gain over greedy decoding.
+  Engineered a SigLIP-Gemma transformer with autoregressive decoding and KV caching, improving BLEU-4 by +3.7 over greedy decoding.
 
-- **Latent Diffusion Transformer for Text-to-Image Synthesis**  
-  Reproduced Stable Diffusion with classifier-free guidance, achieving FID: 12.4 and CLIPScore: 0.32 on COCO validation. Enabled inpainting, image-to-image, and captioning.
+- **Latent Diffusion for Text-to-Image Synthesis**  
+  Reproduced Stable Diffusion v1.5 with classifier-free guidance, achieving FID: 12.4 and CLIPScore: 0.32; enabled inpainting, image-to-image, and captioning tasks.
 
-- **Deep Generative Models for Semi-Supervised Learning**  
-  Implemented and improved M2 model by Kingma et al. for CIFAR-10 and MNIST, achieving a 4% test accuracy gain with entropy regularization and mutual information techniques.
-
----
-
-### ⚙️ Technical Stack
-
-**Languages:** Python, C++, SQL, Java, JavaScript  
-**ML Frameworks:** PyTorch, TensorFlow, HuggingFace, Scikit-learn  
-**Infra:** Docker, Kubernetes, AWS, Azure, MLflow, Jenkins, Prometheus, Grafana  
-**RAG/LLMs:** FAISS, LangChain, LangGraph, PEFT, QLoRA  
-**Generative AI:** DDPM, VDM, VAEs, GANs, Transformers, LoRA fine-tuning
+- **Semi-Supervised Learning with Deep Generative Models**  
+  Extended the M2 architecture with entropy regularization and mutual information maximization, yielding a +4% accuracy gain on MNIST.
 
 ---
 
-### 🧠 Notable Projects
+### 🚀 Selected Projects
 
 - **🩺 Multi-Agent Medical Appointment System**  
-  Streamlined appointment handling via LangGraph agents and FastAPI backend; reduced average booking time by 60%.
+  Designed a LangGraph-based supervisor-agent system with FastAPI backend and Streamlit UI. Achieved ~60% latency reduction in appointment processing.
 
-- **💬 RAG-Powered Customer Support Chatbot**  
-  Integrated Gemini Pro with AstraDB vector store and AJAX frontend for live semantic search and support.
+- **💬 RAG-Powered Customer Support Agent**  
+  Built an ETL pipeline for Flipkart reviews into AstraDB and integrated Gemini Pro embeddings for semantic retrieval and QA over product catalogs.
 
-- **🛰️ 3D Point Cloud Segmentation using 2D Voting**  
-  Fused 2D OneFormer outputs with 3D LiDAR data to achieve 96.5% accuracy with minimal overhead.
+- **🛰️ 3D Point Cloud Segmentation via 2D Voting**  
+  Mapped OneFormer-based 2D labels onto 3D point clouds using depth and LiDAR data; achieved 96.5% segmentation accuracy with minimal overhead.
+
+- **🏁 Autonomous Racing Buggy (ROS2 + YOLO)**  
+  Deployed LIDAR and camera fusion with INT8-quantized YOLOv5 for real-time track navigation and object avoidance.
+
+- **🤖 Multi-Agent SLAM with Quadruped Robots**  
+  Developed SLAM and exploration pipelines for Unitree GO robots using RTABMap and ZED-based visual-inertial fusion.
 
 ---
 
-📄 [**Download Resume (PDF)**](files/ravi_raj_resume.pdf)  
+### ⚙️ Technical Proficiency
+
+- **Languages:** Python, C++, SQL, Java  
+- **Frameworks:** PyTorch, TensorFlow, HuggingFace, Scikit-learn  
+- **Infra & MLOps:** Docker, Kubernetes, MLflow, Jenkins, Prometheus, AWS, GCP  
+- **LLMs & RAG:** LangChain, LangGraph, FAISS, QLoRA, PEFT, Prompt Engineering  
+- **Generative AI:** DDPM, VDM, VAE, GAN, Classifier-Free Guidance, Top-p Sampling  
+- **Robotics Stack (minor):** ROS2, SLAM, MoveIt, Gazebo, Isaac Gym, Depth Sensing
+
+---
+
+📄 [**AI/ML Resume**](files/ravi_raj_resume_ai.pdf) | [**Robotics Resume**](files/ravi_raj_resume_robotics.pdf)  
 🔗 [GitHub](https://github.com/raviraj988) • [LinkedIn](https://www.linkedin.com/feed/) • Cleveland, OH
 
 ---
 
-_This portfolio site is built using the [AcademicPages](https://github.com/academicpages/academicpages.github.io) template and hosted on GitHub Pages._
+_This portfolio site is powered by [AcademicPages](https://github.com/academicpages/academicpages.github.io) and hosted via GitHub Pages._
