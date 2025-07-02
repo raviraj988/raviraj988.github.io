@@ -7,15 +7,15 @@ redirect_from:
   - /about.html
 ---
 
-I’m Ravi Raj Kumar, a graduate student in Computer Science at Case Western Reserve University, specializing in Machine Learning, Generative AI, and AI Infrastructure. My academic background includes advanced coursework and reserch in Machine Learning, Natural Language Processing, probabilistic Graphical models, computer vision,  High Performant Systems for AI and reinforcement learning.
+I’m Ravi Raj Kumar, a graduate student in Computer Science at **Case Western Reserve University**, specializing in AI and Machine Learning. My academic background includes coursework and research in Machine Learning, Natural Language Processing, probabilistic Graphical models, computer vision,  High Performant Systems for AI and reinforcement learning.
 
-I have four years of professional experience from **Tata Consultancy Services**, where I worked on  designing and deployment of end-to-end machine learning systems in the banking and finance sector. My work included building and fine-tuning scalable NLP pipelines using transformer-based models such as BERT, RoBERTa, and Longformer, as well as implementing production-grade MLOps workflows using MLflow, Docker, Kubernetes, and Jenkins. I’ve handled massive, high-velocity data from sources like Hadoop, Snowflake, and MongoDB, integrating continuous model validation, drift detection, and real-time monitoring with Prometheus and Grafana.
+I have four years of professional experience from **Tata Consultancy Services**, where I worked on designing and deployment of end-to-end machine learning systems in the banking and finance sector. My work included building and fine-tuning scalable varous NLP pipelines using transformer-based models such as BERT, RoBERTa  as well as implementing production-grade MLOps workflows using MLflow, Docker, Kubernetes, and Jenkins. I’ve handled massive, high-velocity data from sources like Hadoop, Snowflake, and MongoDB, integrating continuous model validation, drift detection, and real-time monitoring with Prometheus and Grafana.
 
 
 ---
 
 ### 🧪 Research Interests  
-My research lies at the intersection of **generative modeling**, **multimodal vision-language learning**, and **reinforcement learning for structured reasoning**. I have explored methods to improve the efficiency, adaptability, and semantic grounding of large models, especially in contexts like RAG, image-conditioned text generation, and text-to-image synthesis. Developed sample-efficient PPO-based optimization for multi-agent setups, and designing modular generative pipelines that operate across modalities. My work also extends to semi-supervised learning with deep generative models and efficient 3D perception using 2D vision cues—bridging foundational AI research with practical deployment challenges.
+My research lies at the intersection of **generative modeling**, **multimodal vision-language learning**, and **reinforcement learning for structured reasoning**. I have explored methods to improve sample-efficient PPO-based optimization for multi-agent setups, and designing modular generative pipelines that operate across modalities. My work also extends to semi-supervised learning with deep generative models and efficient 3D perception using 2D vision cues—bridging foundational AI research with practical deployment challenges.
 
 ### 📚 Research Highlights
 
