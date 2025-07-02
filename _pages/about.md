@@ -7,11 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I’m **Ravi Raj Kumar**, a graduate student pursuing an M.S. in Computer Science at **Case Western Reserve University**, where I specialize in **Machine Learning**, **Generative AI**, and **AI Infrastructure**. I have four years of professional experience from **Tata Consultancy Services**, where I led the design and deployment of end-to-end machine learning systems in the banking and finance sector. My work included building scalable NLP pipelines using transformer-based models such as BERT, RoBERTa, and Longformer, as well as implementing production-grade MLOps workflows using MLflow, Docker, Kubernetes, and Jenkins. I’ve handled massive, high-velocity data from sources like Hadoop, Snowflake, and MongoDB, integrating continuous model validation, drift detection, and real-time monitoring with Prometheus and Grafana.
+Hello! I’m **Ravi Raj Kumar**, a graduate student pursuing an M.S. in Computer Science at **Case Western Reserve University**, where I specialize in **Machine Learning**, **Generative AI**, and **AI Infrastructure**. I have four years of professional experience from **Tata Consultancy Services**, where I worked on  designing and deployment of end-to-end machine learning systems in the banking and finance sector. My work included building and fine-tuning scalable NLP pipelines using transformer-based models such as BERT, RoBERTa, and Longformer, as well as implementing production-grade MLOps workflows using MLflow, Docker, Kubernetes, and Jenkins. I’ve handled massive, high-velocity data from sources like Hadoop, Snowflake, and MongoDB, integrating continuous model validation, drift detection, and real-time monitoring with Prometheus and Grafana.
 
 
 ### 🧪 Research Interests  
-My research lies at the intersection of **generative modeling**, **multimodal vision-language learning**, and **reinforcement learning for structured reasoning**. I have explored methods to improve the efficiency, adaptability, and semantic grounding of large models, especially in contexts like retrieval-augmented generation (RAG), image-conditioned text generation, and text-to-image synthesis. I am particularly interested in scalable fine-tuning strategies (e.g., LoRA), sample-efficient PPO-based optimization for multi-agent setups, and designing modular generative pipelines that operate across modalities. My work also extends to semi-supervised learning with deep generative models and efficient 3D perception using 2D vision cues—bridging foundational AI research with practical deployment challenges.
+My research lies at the intersection of **generative modeling**, **multimodal vision-language learning**, and **reinforcement learning for structured reasoning**. I have explored methods to improve the efficiency, adaptability, and semantic grounding of large models, especially in contexts like RAG, image-conditioned text generation, and text-to-image synthesis. Developed sample-efficient PPO-based optimization for multi-agent setups, and designing modular generative pipelines that operate across modalities. My work also extends to semi-supervised learning with deep generative models and efficient 3D perception using 2D vision cues—bridging foundational AI research with practical deployment challenges.
 
 
 ### 🤖 Robotics  
@@ -85,20 +85,3 @@ and Prioritization, Named Entity Recognition (NER) for automated information ext
 
 ---
 
-### ⚙️ Technical Proficiency
-
-- **Languages & Frameworks**: Python, C++, SQL, Java, JavaScript, TensorFlow, PyTorch, HuggingFace, FastAPI  
-- **Machine Learning**: Classification, Regression, Transformers, CNNs, RNNs, Scikit-learn  
-- **Reinforcement Learning**: Q-Learning, SARSA, REINFORCE, PPO, GRPO, A2C, DDPG, SAC, Multi-Agent RL  
-- **Generative AI**: DDPM, VDM, GANs, VAEs, ELBO, Image Synthesis, LoRA, QLoRA, PEFT  
-- **MLOps & Deployment**: MLflow, Docker, Kubernetes, Jenkins, ONNX, Prometheus, Grafana, AWS, GCP  
-- **RAG/LLM Stack**: FAISS, Pinecone, LangChain, LangGraph, Top-K Retrieval, Prompt Engineering  
-
----
-
-📄 [**Download AI/ML Resume (PDF)**](files/ravi_raj_resume_ai.pdf) | [**Download Robotics Resume**](files/ravi_raj_resume_robotics.pdf)  
-🔗 [GitHub](https://github.com/raviraj988) • [LinkedIn](https://www.linkedin.com/in/ravi-raj-kumar-968994128/) • Cleveland, OH
-
----
-
-_This portfolio is powered by [AcademicPages](https://github.com/academicpages/academicpages.github.io) and hosted via GitHub Pages._
