@@ -23,7 +23,7 @@ repository               : "raviraj988/raviraj988.github.io" # Replace with your
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/my_pp_Photo.png"
+  avatar           : "profile.png"
   name             : "Ravi Raj Kumar"
   pronouns         : # example: "she/her"  
   bio              : "AI/ML Engineer & Researcher"
