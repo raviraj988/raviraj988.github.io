@@ -1,5 +1,5 @@
 ---
-title: AI & Machine Learning
+title: "🧠 AI & Machine Learning"
 layout: page
 permalink: /ai-ml/
 ---
@@ -16,10 +16,11 @@ Welcome to my AI/ML portfolio. This section showcases my work in machine learnin
 <img src="../images/projects/rag-ppo.png" alt="RAG + PPO" style="float: right; max-width: 300px; margin-left: 20px;">
 <ul style="font-size:16px;">
   <li>Designed a <strong>Multi-Agent Reinforcement Learning</strong> framework for RAG, modeling query design, document retrieval, and answer generation as cooperative agents jointly optimized via <strong>PPO</strong> under a unified <strong>F1-based reward</strong> signal.</li>
-  <li>Implemented <strong>FAISS</strong> search with <strong>sentence-transformers/all-MiniLM-L6-v2</strong> embeddings for efficient top-K passage retrieval over a custom <strong>SQuAD</strong> corpus in a reproducible <strong>Conda</strong> environment.</li>
-  <li>Used <strong>LoRA</strong> adapters (freezing 96.65% of weights) for warm-start on 5,000 QA pairs to boost sample efficiency before RL.</li>
-  <li>Fine-tuned adapters and value heads using <strong>TRL’s PPOTrainer</strong>, significantly improving QA performance over SFT.</li>
-  <li>Improved factual consistency and generation relevance through unified reward optimization.</li>
+  <li>Implemented <strong>FAISS</strong> search with <strong>sentence-transformers/all-MiniLM-L6-v2</strong> embeddings to enable efficient top-K passage retrieval over a custom <strong>SQuAD</strong> corpus, all within a reproducible <strong>Conda</strong> environment.</li>
+  <li>Implemented Warm-start for each agent by employing <strong>PEFT’s LoRA</strong> by freezing <strong>96.65%</strong> of weights, to fine-tuning LoRA adapters on <strong>5,000 SQuAD QA pairs</strong> before any RL, which improved sample efficiency and stabilized the subsequent PPO loop.</li>
+  <li>Implemented a <strong>PPO loop</strong> using <strong>TRL’s PPOTrainer</strong> that fine-tunes only the LoRA adapters and value head by iterating query rewrite, retrieve, generate with a unified reward signal, significantly improving QA performance over SFT.</li>
+  <li>Designed a multi-agent <strong>PPO-based framework</strong> where query rewriting, document retrieval, and generation are jointly optimized using shared rewards.</li>
+  <li>Used <strong>LoRA adapters</strong> for warm-start fine-tuning on SQuAD and built a reproducible pipeline with <strong>TRL’s PPOTrainer</strong>, improving factual consistency and generation relevance.</li>
 </ul>
 
 <hr/>
@@ -28,11 +29,10 @@ Welcome to my AI/ML portfolio. This section showcases my work in machine learnin
 <p><a href="https://github.com/yourusername/siglip-gemma">🔗 GitHub Repo</a></p>
 <img src="../images/projects/siglip-gemma.png" alt="Multimodal Transformer" style="float: right; max-width: 300px; margin-left: 20px;">
 <ul style="font-size:16px;">
-  <li>Built a multimodal transformer integrating a <strong>SigLIP-style Vision Transformer</strong> and a <strong>Gemma-based causal decoder</strong>.</li>
-  <li>Enabled image-conditioned generation for tasks like captioning and VQA.</li>
-  <li>Implemented <strong>KV caching</strong> and <strong>Rotary Positional Embeddings</strong> to reduce latency by <strong>40%</strong>.</li>
-  <li>Improved token alignment using <strong>PaLI-inspired image-token prefixing</strong>.</li>
-  <li>Achieved <strong>+3.7 BLEU-4 score</strong> with top-p sampling.</li>
+  <li>Designed and implemented a <strong>multimodal transformer</strong> integrating a SigLIP-style Vision Transformer with a Gemma-based causal decoder for image-grounded generation tasks such as captioning and visual question answering.</li>
+  <li>Engineered <strong>autoregressive decoding</strong> with KV caching and <strong>Rotary Positional Embeddings</strong>, reducing inference latency by <strong>40%</strong> per token on long sequences.</li>
+  <li>Built a <strong>PaLI-inspired tokenizer</strong> pipeline with image-token prefixing and robust image normalization, improving input alignment and reducing token mismatch errors by <strong>23%</strong>.</li>
+  <li>Enabled diverse generation using <strong>temperature-scaled top-p sampling</strong>; achieved a <strong>+3.7 BLEU-4</strong> score improvement over greedy decoding on benchmark prompts.</li>
 </ul>
 
 <hr/>
@@ -41,12 +41,12 @@ Welcome to my AI/ML portfolio. This section showcases my work in machine learnin
 <p><a href="https://github.com/hkproj/pytorch-stable-diffusion">🔗 GitHub Repo</a></p>
 <img src="../images/projects/latent-diffusion.png" alt="Stable Diffusion" style="float: right; max-width: 300px; margin-left: 20px;">
 <ul style="font-size:16px;">
-  <li>Developed a full pipeline with <strong>CLIP</strong>, <strong>VAE</strong>, and <strong>U-Net</strong>-based denoising diffusion.</li>
-  <li>Operated in latent space (64×64) for <strong>4× faster inference</strong>, reducing memory and compute by <strong>85%</strong>.</li>
-  <li>Used <strong>Classifier-Free Guidance</strong> for better prompt alignment, improving <strong>CLIPScore by 8%</strong>.</li>
-  <li>Enabled multimodal capabilities like inpainting and image-to-image translation.</li>
-  <li>Reproduced <strong>Stable Diffusion v1.5</strong>, achieving <strong>FID: 12.4</strong> and <strong>CLIPScore: 0.32</strong>.</li>
-  <li>Optimized 12-layer Transformer for <strong>4000+ tokens/sec</strong> throughput on A100.</li>
+  <li>Developed a complete <strong>multimodal pipeline</strong> integrating <strong>CLIP</strong>-based language encoder, <strong>VAE</strong>, and <strong>U-Net</strong>-based diffusion model for high-fidelity text-to-image generation.</li>
+  <li>Achieved <strong>4× faster inference</strong> over pixel-space models by operating in latent space (64×64 vs. 512×512), reducing memory and compute by over <strong>85%</strong>.</li>
+  <li>Implemented <strong>Classifier-Free Guidance</strong> to enhance prompt alignment, improving semantic accuracy by <strong>8%</strong> (measured via CLIPScore).</li>
+  <li>Enabled multimodal capabilities: <strong>text-to-image, image-to-image translation, and inpainting</strong>, through a unified conditional diffusion framework.</li>
+  <li>Reproduced <strong>Stable Diffusion</strong> from scratch with PyTorch, integrating CLIP, VAE, and U-Net.</li>
+  <li>Achieved <strong>FID: 12.4</strong> and <strong>CLIPScore: 0.32</strong> on COCO; optimized <strong>12-layer Transformer</strong> with 4000+ tokens/sec throughput on A100.</li>
 </ul>
 
 <hr/>
@@ -55,10 +55,10 @@ Welcome to my AI/ML portfolio. This section showcases my work in machine learnin
 <p><a href="https://github.com/raviraj988/Enhancing_SSL_Using_Deep_Gen_Models">🔗 GitHub Repo</a></p>
 <img src="../images/projects/ssl-dgm.png" alt="Semi-supervised Learning" style="float: right; max-width: 300px; margin-left: 20px;">
 <ul style="font-size:16px;">
-  <li>Implemented <strong>M2 model</strong> by Kingma et al. on <strong>MNIST</strong> and <strong>CIFAR-10</strong>.</li>
-  <li>Achieved <strong>94.8%</strong> accuracy on MNIST (1k labels) and <strong>63.1%</strong> on CIFAR-10 (4k labels).</li>
-  <li>Improved ELBO by addressing entropy regularization, mutual information, and label smoothing.</li>
-  <li>Gained <strong>4%</strong> boost on MNIST and <strong>2.5%</strong> on CIFAR-10, and reduced entropy by <strong>15%</strong>.</li>
+  <li>Conducted an in-depth survey of <strong>semi-supervised learning</strong> with <strong>deep generative models</strong> and implemented Kingma et al.’s M2 approach on <strong>MNIST and CIFAR-10</strong>.</li>
+  <li>Matched paper results: <strong>94.8% test accuracy</strong> on MNIST (1k labels) and <strong>63.1%</strong> on CIFAR-10 (4k labels), establishing a reliable baseline.</li>
+  <li>Performed mathematical and experimental analysis of <strong>ELBO</strong> and introduced improvements: entropy penalization, mutual information maximization, and smoothed-label integration.</li>
+  <li>Delivered a <strong>4% accuracy improvement</strong> on MNIST and a <strong>2.5% gain</strong> on CIFAR-10, along with a <strong>15% reduction</strong> in classifier entropy.</li>
 </ul>
 
 <hr/>
@@ -67,10 +67,9 @@ Welcome to my AI/ML portfolio. This section showcases my work in machine learnin
 <p><a href="https://github.com/raviraj988/3D-POINT-CLOUD-SEGMENTATION-USING-2D-IMAGE-SEGMENTATION">🔗 GitHub Repo</a></p>
 <img src="../images/projects/pointcloud.png" alt="Point Cloud" style="float: right; max-width: 300px; margin-left: 20px;">
 <ul style="font-size:16px;">
-  <li>Projected <strong>OneFormer</strong>-based 2D segmentation masks onto 3D point clouds.</li>
-  <li>Fused <strong>RGB</strong>, <strong>Depth</strong>, and <strong>LiDAR</strong> from iPhone 13 Pro.</li>
-  <li>Achieved <strong>96.5%</strong> segmentation accuracy matching <strong>PointFormer</strong>.</li>
-  <li>Reduced memory and compute usage while maintaining performance.</li>
+  <li>Developed a novel <strong>3D point cloud segmentation</strong> framework leveraging <strong>2D image segmentation models</strong> (OneFormer) and a voting-based projection mechanism.</li>
+  <li>Used <strong>RGB images, depth maps, and LiDAR data</strong> captured with iPhone 13 Pro, transferring semantic labels via voting to 3D point clouds.</li>
+  <li>Achieved <strong>96.5%</strong> segmentation accuracy, matching <strong>PointFormer</strong>, with significantly lower computation and memory cost.</li>
 </ul>
 
 <hr/>
@@ -79,9 +78,9 @@ Welcome to my AI/ML portfolio. This section showcases my work in machine learnin
 <p><a href="https://github.com/raviraj988/Multi_Agent_System_For_Doctor-s_Appointment">🔗 GitHub Repo</a></p>
 <img src="../images/projects/doctor-agent.png" alt="Medical Appointment AI" style="float: right; max-width: 300px; margin-left: 20px;">
 <ul style="font-size:16px;">
-  <li>Built multi-agent routing system using <strong>LangChain</strong> and <strong>LangGraph</strong>.</li>
-  <li>Integrated <strong>FastAPI</strong> for backend and <strong>Streamlit</strong> for frontend UI.</li>
-  <li>Reduced query response time by <strong>60%</strong> across 4,000+ simulated records.</li>
+  <li>Built a modular <strong>multi-agent AI system</strong> using <strong>LangChain</strong> and <strong>LangGraph</strong>, with a <strong>supervisor-agent architecture</strong> to route user queries.</li>
+  <li>Engineered a <strong>full-stack solution</strong> using <strong>FastAPI</strong> and <strong>Streamlit</strong> for real-time appointment management via natural language.</li>
+  <li>Improved query-to-response time by <strong>~60%</strong> by automating slot filtering and delegation across <strong>4,000+ records</strong>, reducing manual effort from ~30s to <strong>under 12s</strong>.</li>
 </ul>
 
 <hr/>
@@ -90,12 +89,11 @@ Welcome to my AI/ML portfolio. This section showcases my work in machine learnin
 <p><a href="https://github.com/raviraj988/RAG_Customer_support_System">🔗 GitHub Repo</a></p>
 <img src="../images/projects/rag-chatbot.png" alt="RAG Chatbot" style="float: right; max-width: 300px; margin-left: 20px;">
 <ul style="font-size:16px;">
-  <li>Built ETL pipeline with <strong>Pandas</strong> and integrated <strong>LangChain</strong> + <strong>AstraDB Vector Store</strong>.</li>
-  <li>Used <strong>Google Gemini 1.5 Pro</strong> embeddings and <strong>ChatPromptTemplate</strong> for retrieval and generation.</li>
-  <li>Developed backend with <strong>FastAPI</strong>, used <strong>PyYAML</strong> and <strong>python-dotenv</strong> for configuration, and secured secret management.</li>
-  <li>Frontend built with <strong>AJAX</strong>, <strong>Bootstrap</strong>, and <strong>Jinja2</strong>.</li>
+  <li>Built an end-to-end <strong>ETL pipeline</strong> using <strong>Pandas</strong> to parse Flipkart reviews into LangChain documents and ingest into <strong>AstraDB Vector Store</strong>.</li>
+  <li>Integrated <strong>Google Gemini-1.5-Pro embeddings</strong> and <strong>LangChain’s ChatPromptTemplate</strong> for context-aware retrieval and response generation.</li>
+  <li>Developed a RESTful <strong>FastAPI backend</strong> with environment-driven configuration (<strong>PyYAML</strong>, <strong>python-dotenv</strong>) and AJAX UI using <strong>Jinja2, Bootstrap 4</strong>, and <strong>jQuery</strong>.</li>
 </ul>
 
 <hr/>
 
-<p>🧠 More projects coming soon...</p>
+<p>🧠 More projects coming soon ...</p>
