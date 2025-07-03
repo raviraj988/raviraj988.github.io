@@ -11,15 +11,13 @@ I’m Ravi Raj Kumar, a graduate student in Computer Science at **Case Western R
 
 I have taken graduate-level courses in **Machine Learning**, **Natural Language Processing**, **Probabilistic Graphical Models**, **Computer Vision**, **High-Performance Systems for AI**, and **Reinforcement Learning**, which have built a strong foundation for both my academic research and applied AI work.
 
-I have four years of professional experience from **Tata Consultancy Services**, where I worked on designing and deployment of end-to-end machine learning systems in the banking and finance sector.
-
-My work included building and fine-tuning scalable varous NLP pipelines using transformer-based models such as BERT, RoBERTa  as well as implementing production-grade** MLOps workflows** using MLflow, Docker, Kubernetes, and Jenkins. I’ve handled massive, high-velocity data from sources like Hadoop, Snowflake, and MongoDB, integrating continuous model validation, drift detection, and real-time monitoring with Prometheus and Grafana.
+I have four years of professional experience from **Tata Consultancy Services**, where I worked on designing and deployment of end-to-end machine learning systems in the banking and finance sector. My work included building and fine-tuning scalable varous NLP pipelines using transformer-based models such as BERT, RoBERTa  as well as implementing production-grade **MLOps workflows** using MLflow, Docker, Kubernetes, and Jenkins. I’ve handled massive, high-velocity data from sources like Hadoop, Snowflake, and MongoDB, integrating continuous model validation, drift detection, and real-time monitoring with Prometheus and Grafana.
 
 
 ---
 ## AI & Machine Learning
 ### 🧪 Research Interests  
-My research lies at the intersection of **generative modeling**, **multimodal vision-language learning**, and **reinforcement learning for structured reasoning**. I have explored methods to improve sample-efficient PPO-based optimization for multi-agent setups, and designing modular generative pipelines that operate across modalities. My work also extends to semi-supervised learning with deep generative models and efficient 3D perception using 2D vision cues—bridging foundational AI research with practical deployment challenges.
+My research lies in the area of **deep generative modeling**, **multimodal vision-language models**, and **reinforcement learning**. I have explored methods to improve sample-efficient PPO-based optimization for multi-agent setups, and designing modular generative pipelines that operate across modalities. My work also extends to semi-supervised learning with deep generative models and efficient 3D perception using 2D vision cues—bridging foundational AI research with practical deployment challenges.
 
 #### 📚 Research Highlights
 
