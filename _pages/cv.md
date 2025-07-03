@@ -7,11 +7,16 @@ redirect_from:
   - /resume
 ---
 
-## 📄Resume
+## 📄AI/ML Resume
 
-<iframe src="/files/Resume_Gen_AI_Research.pdf" width="100%" height="1000px" style="border: none;">
+<iframe src="/files/Resume_GenAI.pdf" width="100%" height="1000px" style="border: none;">
   Your browser does not support PDFs. 
-  <a href="/files/Resume_Gen_AI_Research.pdf">Download the resume instead.</a>
+  <a href="/files/Resume_GenAI.pdf">Download the resume instead.</a>
+</iframe>
+## Robotics Resume
+<iframe src="/files/Resume_RSE.pdf" width="100%" height="1000px" style="border: none;">
+  Your browser does not support PDFs. 
+  <a href="/files/Resume_RSE.pdf">Download the resume instead.</a>
 </iframe>
 
 ---
