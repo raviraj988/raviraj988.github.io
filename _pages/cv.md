@@ -9,7 +9,7 @@ redirect_from:
 
 ## 📄AI/ML Resume
 
-<iframe src="/files/Resume_GenAI.pdf" width="100%" height="1000px" style="border: none;">
+<iframe src="/files/Resume_AI.pdf" width="100%" height="1000px" style="border: none;">
   Your browser does not support PDFs. 
   <a href="/files/Resume_GenAI.pdf">Download the resume instead.</a>
 </iframe>
