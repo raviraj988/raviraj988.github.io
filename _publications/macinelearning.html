@@ -11,58 +11,49 @@ Welcome to my AI/ML portfolio. This section showcases my work in machine learnin
 
 <hr/>
 
-<h2>🔁 Optimizing RAG with Multi-Agent Reinforcement Learning</h2>
-<p><a href="https://github.com/raviraj988">🔗 GitHub Repo</a></p>
-<img src="../images/projects/rag-ppo.png" alt="RAG + PPO" style="float: right; max-width: 300px; margin-left: 20px;">
+<h2>📌 GRPO-Based Efficient Retrieval Optimization in RAG Using Reinforcement Learning</h2>
+<p><i>Supervising Professor: : Dr. Soumya Ray</i></p>
+<img src="../images/projects/rag-grpo.png" alt="GRPO RAG" style="float: right; max-width: 300px; margin-left: 20px;">
 <ul style="font-size:16px;">
-  <li>Designed a <strong>Multi-Agent Reinforcement Learning</strong> framework for RAG, modeling query design, document retrieval, and answer generation as cooperative agents jointly optimized via <strong>PPO</strong> under a unified <strong>F1-based reward</strong> signal.</li>
-  <li>Implemented <strong>FAISS</strong> search with <strong>sentence-transformers/all-MiniLM-L6-v2</strong> embeddings to enable efficient top-K passage retrieval over a custom <strong>SQuAD</strong> corpus, all within a reproducible <strong>Conda</strong> environment.</li>
-  <li>Implemented Warm-start for each agent by employing <strong>PEFT’s LoRA</strong> by freezing <strong>96.65%</strong> of weights, to fine-tuning LoRA adapters on <strong>5,000 SQuAD QA pairs</strong> before any RL, which improved sample efficiency and stabilized the subsequent PPO loop.</li>
-  <li>Implemented a <strong>PPO loop</strong> using <strong>TRL’s PPOTrainer</strong> that fine-tunes only the LoRA adapters and value head by iterating query rewrite, retrieve, generate with a unified reward signal, significantly improving QA performance over SFT.</li>
-  <li>Designed a multi-agent <strong>PPO-based framework</strong> where query rewriting, document retrieval, and generation are jointly optimized using shared rewards.</li>
-  <li>Used <strong>LoRA adapters</strong> for warm-start fine-tuning on SQuAD and built a reproducible pipeline with <strong>TRL’s PPOTrainer</strong>, improving factual consistency and generation relevance.</li>
+  <li>Developed a modular <strong>reinforcement learning</strong> framework for <strong>RAG</strong> that trains  the search agent via <strong>Group Relative Policy Optimization (GRPO)</strong>, using a <strong>novel reward signal</strong> based on the gain in answer quality from retrieved evidence, avoiding brittle end-to-end fine-tuning and achieves superior performance with lower data requirements across general and medical QA tasks</li>
+  <li>This approach <strong>shows good performance on other QA domains,</strong> despite training only on general QA, suggests that RL search skills<strong> generalize more reliably </strong>than generation-tuned approaches</li>
+  <li>Fine-tuned the retriever agent using <strong>LoRA-based Group Relative Policy Optimization (GRPO)</strong>, demonstrating superior QA performance over end-to-end RAG baselines like <strong>Search-R1</strong> while requiring significantly less training data.</li>
 </ul>
 
 <hr/>
 
-<h2>🖼️ Multimodal Transformer for Image-Conditioned Generation</h2>
-<p><a href="https://github.com/raviraj988/Multimodal-Image-Conditioned-Text-Generation">🔗 GitHub Repo</a></p>
+<h2>📊 DEEP GENERATIVE MODELS TO ENHANCE SEMI SUPERVISED LEARNING</h2>
+<p><i>Supervising Professor: : Dr. Soumya Ray</i> &nbsp; <a href="https://github.com/raviraj988/Enhancing_SSL_Using_Deep_Gen_Models" style="color:blue">[Github]</a></p>
+<img src="../images/projects/ssl-dgm.png" alt="Semi-Supervised DGM" style="float: right; max-width: 300px; margin-left: 20px;">
+<ul style="font-size:16px;">
+  <li>Explored various <strong>deep generative modeling</strong> approaches to improve semi-supervised learning and reproduced <strong>Kingma et al.’s M2</strong> model, establishing a strong baseline for classification under semi-supervised framework (ie., <strong>10% labeled data</strong>) on MNIST and CIFAR-10 datasets.</li>
+  <li>Conducted a rigorous mathematical and experimental analysis of the <strong>Evidence Lower Bound (ELBO)</strong> within a variational inference framework, identifying and resolving <strong>three critical issues in the paper:</strong> entropy penalization for sharper decision boundaries; mutual information maximization to strengthen input–label coupling; and smoothed-label integration into the classification loss.</li>
+  <li>Achieved a <strong>+4%</strong> test accuracy improvement on MNIST and <strong>+2.5%</strong> on CIFAR-10 over the M2 baseline, along with a <strong>15% reduction in prediction entropy</strong>, demonstrating better confidence and calibration in semi-supervised settings.</li>
+</ul>
+
+<hr/>
+
+<h2>🖼️ MULTIMODAL TRANSFORMER FOR IMAGE-CONDITIONED TEXT GENERATION</h2>
+<p><i>Independent Research Project</i> &nbsp; <a href="https://github.com/raviraj988/Multimodal-Image-Conditioned-Text-Generation" style="color:blue">[Github]</a></p>
 <img src="../images/projects/siglip-gemma.png" alt="Multimodal Transformer" style="float: right; max-width: 300px; margin-left: 20px;">
 <ul style="font-size:16px;">
-  <li>Designed and implemented a <strong>multimodal transformer</strong> integrating a SigLIP-style Vision Transformer with a Gemma-based causal decoder for image-grounded generation tasks such as captioning and visual question answering.</li>
-  <li>Engineered <strong>autoregressive decoding</strong> with KV caching and <strong>Rotary Positional Embeddings</strong>, reducing inference latency by <strong>40%</strong> per token on long sequences.</li>
-  <li>Built a <strong>PaLI-inspired tokenizer</strong> pipeline with image-token prefixing and robust image normalization, improving input alignment and reducing token mismatch errors by <strong>23%</strong>.</li>
-  <li>Enabled diverse generation using <strong>temperature-scaled top-p sampling</strong>; achieved a <strong>+3.7 BLEU-4</strong> score improvement over greedy decoding on benchmark prompts.</li>
+  <li>Designed and implemented a multimodal transformer integrating a SigLIP-style Vision Transformer with a Gemma-based causal decoder for image-grounded generation tasks such as captioning and visual question answering.</li>
+  <li>Engineered autoregressive decoding with KV caching and Rotary Positional Embeddings, reducing inference latency significantly</li>
+  <li>Built a PaLI-inspired tokenizer pipeline with image-token prefixing and robust image normalization, improving input alignment and reducing token mismatch errors.</li>
+  <li>Enabled image generation using temperature-scaled top-p sampling; achieved a good  BLEU score improvement over greedy decoding on benchmark prompts.</li>
 </ul>
 
 <hr/>
 
-<h2>🎨 Latent Diffusion Model for Text-to-Image Synthesis</h2>
-<p><a href="https://github.com/hkproj/pytorch-stable-diffusion">🔗 GitHub Repo</a></p>
-<img src="../images/projects/latent-diffusion.png" alt="Stable Diffusion" style="float: right; max-width: 300px; margin-left: 20px;">
+<h2>🎨 LATENT DIFFUSION MODEL (Text-Conditioned Image generation)</h2>
+<p><i>Independent Research Project</i> &nbsp; <a href="https://github.com/raviraj988/Latent-Diffusion-Model" style="color:blue">[GitHub]</a></p>
+<img src="../images/projects/latent-diffusion.png" alt="Latent Diffusion" style="float: right; max-width: 300px; margin-left: 20px;">
 <ul style="font-size:16px;">
-  <li>Developed a complete <strong>multimodal pipeline</strong> integrating <strong>CLIP</strong>-based language encoder, <strong>VAE</strong>, and <strong>U-Net</strong>-based diffusion model for high-fidelity text-to-image generation.</li>
-  <li>Achieved <strong>4× faster inference</strong> over pixel-space models by operating in latent space (64×64 vs. 512×512), reducing memory and compute by over <strong>85%</strong>.</li>
-  <li>Implemented <strong>Classifier-Free Guidance</strong> to enhance prompt alignment, improving semantic accuracy by <strong>8%</strong> (measured via CLIPScore).</li>
-  <li>Enabled multimodal capabilities: <strong>text-to-image, image-to-image translation, and inpainting</strong>, through a unified conditional diffusion framework.</li>
-  <li>Reproduced <strong>Stable Diffusion</strong> from scratch with PyTorch, integrating CLIP, VAE, and U-Net.</li>
-  <li>Achieved <strong>FID: 12.4</strong> and <strong>CLIPScore: 0.32</strong> on COCO; optimized <strong>12-layer Transformer</strong> with 4000+ tokens/sec throughput on A100.</li>
+  <li>Developed a complete multimodal pipeline integrating CLIP-based language encoder, variational autoencoder (VAE), and U-Net-based denoising diffusion model for high-fidelity text-to-image generation.</li>
+  <li>Achieved <strong>4 times faster inference</strong> over pixel-space models by operating in latent space (64×64 vs. 512×512), reducing memory and compute by over significantly.</li>
+  <li>Implemented <strong>Classifier-Free Guidance</strong> to enhance prompt alignment, improving semantic accuracy of generated images by <strong>~8%</strong> (measured via CLIPScore).</li>
+  <li>Enabled multimodal capabilities: <strong>text-to-image</strong>, <strong>image-to-image translation</strong>, and <strong>inpainting</strong>, through unified conditional diffusion framework.</li>
 </ul>
-
-<hr/>
-
-<h2>📊 Semi-Supervised Learning with Deep Generative Models</h2>
-<p><a href="https://github.com/raviraj988/Enhancing_SSL_Using_Deep_Gen_Models">🔗 GitHub Repo</a></p>
-<img src="../images/projects/ssl-dgm.png" alt="Semi-supervised Learning" style="float: right; max-width: 300px; margin-left: 20px;">
-<ul style="font-size:16px;">
-  <li>Conducted an in-depth survey of <strong>semi-supervised learning</strong> with <strong>deep generative models</strong> and implemented Kingma et al.’s M2 approach on <strong>MNIST and CIFAR-10</strong>.</li>
-  <li>Matched paper results: <strong>94.8% test accuracy</strong> on MNIST (1k labels) and <strong>63.1%</strong> on CIFAR-10 (4k labels), establishing a reliable baseline.</li>
-  <li>Performed mathematical and experimental analysis of <strong>ELBO</strong> and introduced improvements: entropy penalization, mutual information maximization, and smoothed-label integration.</li>
-  <li>Delivered a <strong>4% accuracy improvement</strong> on MNIST and a <strong>2.5% gain</strong> on CIFAR-10, along with a <strong>15% reduction</strong> in classifier entropy.</li>
-</ul>
-
-<hr/>
-
 <h2>🛰️ 3D Point Cloud Segmentation via 2D Voting</h2>
 <p><a href="https://github.com/raviraj988/3D-POINT-CLOUD-SEGMENTATION-USING-2D-IMAGE-SEGMENTATION">🔗 GitHub Repo</a></p>
 <img src="../images/projects/pointcloud.png" alt="Point Cloud" style="float: right; max-width: 300px; margin-left: 20px;">
